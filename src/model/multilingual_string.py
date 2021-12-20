@@ -23,14 +23,14 @@ class String:
 
 	def status(self):
 		"""
-		This method returns the status of the multilingual string
+		This method returns the status of the multilingual string.
 		:return: A string
 		"""
 		return self.__status
 
 	def strings(self):
 		"""
-		This method returns the all strings
+		This method returns the all strings.
 		:return: A dictionary
 		"""
 		return self.__strings
@@ -52,9 +52,23 @@ class String:
 
 	def set_string(self, language, string):
 		"""
-		This method
-		:param language:
-		:param string:
-		:return:
+		This method sets a string in a given language.
+		:param language: A string
+		:param string: A string
 		"""
 		self.__strings[language] = string
+
+
+class EmptyString(String):
+	"""
+	This class represents the empty string.
+	"""
+
+	def __init__(self):
+		"""
+		Constructor
+		"""
+		super().__init__()
+		self.__id = 0
+		self.__status = "OK"
+
