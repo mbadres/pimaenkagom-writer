@@ -6,11 +6,12 @@ class String:
 	This class represents a multilingual string.
 	"""
 
-	def __init__(self):
+	def __init__(self, empty=False):
 		"""
 		Constructor
+		:param empty: A boolean, set true if you want to construct the empty string.
 		"""
-		self.__id = generate_id()
+		self.__id = 0 if empty else generate_id()
 		self.__status = "INCOMPLETE"
 		self.__strings = {}
 
@@ -57,18 +58,4 @@ class String:
 		:param string: A string
 		"""
 		self.__strings[language] = string
-
-
-class EmptyString(String):
-	"""
-	This class represents the empty string.
-	"""
-
-	def __init__(self):
-		"""
-		Constructor
-		"""
-		super().__init__()
-		self.__id = 0
-		self.__status = "OK"
 
