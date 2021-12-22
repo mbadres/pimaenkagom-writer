@@ -12,8 +12,8 @@ class UI(QApplication):
 		Constructor
 		"""
 		super().__init__([])
-		self.setStyleSheet(open("ui/style.css", "r").read())
-		self.window = QUiLoader().load("ui/form.ui")
+		self.setStyleSheet(open("resources/style.css", "r").read())
+		self.window = QUiLoader().load("resources/form.ui")
 		self.window.show()
 		self.window.pushButton.clicked.connect(lambda: print("Aye"))
 		self.exec()
