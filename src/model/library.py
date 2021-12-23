@@ -22,3 +22,22 @@ class Element:
 		self.__version = 1
 		self.__children = [[]]
 
+
+class Library:
+	""""""
+
+	def __init__(self):
+		""""""
+
+		# store multilingual strings
+		self.multilingual_strings = []
+
+		# store library elements
+		self.clauses = []
+		self.lines = []
+		self.paragraphs = []
+		self.sections = []
+		self.chapters = []
+		self.parts = []
+		self.books = []
+		self.collections = []
