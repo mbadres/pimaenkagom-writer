@@ -44,6 +44,24 @@ class String:
 		"""
 		return self.__strings[language]
 
+	def dict(self):
+		"""
+		This method returns the json string representation.
+		:return: A dict
+		"""
+		return {
+			"id": self.id(),
+			"status": self.status(),
+			"strings": self.strings()
+		}
+
+	def __str__(self):
+		"""
+		This method implements the string representation of the object.
+		:return: A string
+		"""
+		return self.dict().__str__()
+
 	def set_status(self, status):
 		"""
 		This method sets the status of the multilingual string.
@@ -58,4 +76,3 @@ class String:
 		:param string: A string
 		"""
 		self.__strings[language] = string
-
