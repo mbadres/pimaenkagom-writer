@@ -4,7 +4,7 @@ from util.generator import generate_id
 
 class Element:
 	"""
-	This clas represents an element in the library
+	This class represents an element in the library
 	"""
 
 	def __init__(self):
@@ -22,12 +22,37 @@ class Element:
 		self.__version = 1
 		self.__children = [[]]
 
+	def id(self):
+		"""
+		This method returns the id of the element.
+		:return: An integer
+		"""
+		return self.__id
+
+	def title(self):
+		"""
+		This method returns the title.
+		:return: A multilingual string
+		"""
+		return self.__title
+
+	def titled(self):
+		"""
+		This method returns true if the element is titled.
+		:return: A boolean
+		"""
+		return self.__titled
+
 
 class Library:
-	""""""
+	"""
+	This class represents a library.
+	"""
 
 	def __init__(self):
-		""""""
+		"""
+		Constructor
+		"""
 
 		# store multilingual strings
 		self.multilingual_strings = []
