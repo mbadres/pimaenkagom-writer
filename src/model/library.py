@@ -4,10 +4,10 @@ from util.generator import generate_id
 
 class Element:
 	"""
-	This class represents an element in the library
+	This class represents an element in the library.
 	"""
 
-	def __init__(self):
+	def __init__(self, node_type=None):
 		"""
 		Constructor
 		"""
@@ -15,7 +15,7 @@ class Element:
 		self.__title = String(empty=True)
 		self.__titled = True
 		self.__type = None
-		self.__node_type = None
+		self.__node_type = node_type
 		self.__audible = True
 		self.__visible = True
 		self.__icon = ""
@@ -91,6 +91,102 @@ class Element:
 		:return: A list of lists
 		"""
 		return self.__children
+
+
+class Clause(Element):
+	"""
+	This class represents a clause in a library.
+	"""
+
+	def __init__(self):
+		"""
+		Constructor
+		"""
+		super(Clause, self).__init__(node_type="clause")
+
+
+class Line(Element):
+	"""
+	This class represents a line in a library.
+	"""
+
+	def __init__(self):
+		"""
+		Constructor
+		"""
+		super(Line, self).__init__(node_type="line")
+
+
+class Paragraph(Element):
+	"""
+	This class represents a paragraph in a library.
+	"""
+
+	def __init__(self):
+		"""
+		Constructor
+		"""
+		super(Paragraph, self).__init__(node_type="paragraph")
+
+
+class Section(Element):
+	"""
+	This class represents a section in a library.
+	"""
+
+	def __init__(self):
+		"""
+		Constructor
+		"""
+		super(Section, self).__init__(node_type="section")
+
+
+class Chapter(Element):
+	"""
+	This class represents a chapter in a library.
+	"""
+
+	def __init__(self):
+		"""
+		Constructor
+		"""
+		super(Chapter, self).__init__(node_type="chapter")
+
+
+class Part(Element):
+	"""
+	This class represents a part in a library.
+	"""
+
+	def __init__(self):
+		"""
+		Constructor
+		"""
+		super(Part, self).__init__(node_type="part")
+
+
+class Book(Element):
+	"""
+	This class represents a book in a library.
+	"""
+
+	def __init__(self):
+		"""
+		Constructor
+		"""
+		super(Book, self).__init__(node_type="book")
+
+
+class Collection(Element):
+	"""
+	This class represents a collection in a library.
+	"""
+
+	def __init__(self):
+		"""
+		Constructor
+		"""
+		super(Collection, self).__init__(node_type="collection")
 
 
 class Library:
