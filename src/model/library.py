@@ -102,7 +102,7 @@ class Clause(Element):
 		"""
 		Constructor
 		"""
-		super(Clause, self).__init__(node_type="clause")
+		super().__init__(node_type="clause")
 
 
 class Line(Element):
@@ -114,7 +114,7 @@ class Line(Element):
 		"""
 		Constructor
 		"""
-		super(Line, self).__init__(node_type="line")
+		super().__init__(node_type="line")
 
 
 class Paragraph(Element):
@@ -126,7 +126,7 @@ class Paragraph(Element):
 		"""
 		Constructor
 		"""
-		super(Paragraph, self).__init__(node_type="paragraph")
+		super().__init__(node_type="paragraph")
 
 
 class Section(Element):
@@ -138,7 +138,7 @@ class Section(Element):
 		"""
 		Constructor
 		"""
-		super(Section, self).__init__(node_type="section")
+		super().__init__(node_type="section")
 
 
 class Chapter(Element):
@@ -150,7 +150,7 @@ class Chapter(Element):
 		"""
 		Constructor
 		"""
-		super(Chapter, self).__init__(node_type="chapter")
+		super().__init__(node_type="chapter")
 
 
 class Part(Element):
@@ -162,7 +162,7 @@ class Part(Element):
 		"""
 		Constructor
 		"""
-		super(Part, self).__init__(node_type="part")
+		super().__init__(node_type="part")
 
 
 class Book(Element):
@@ -174,7 +174,7 @@ class Book(Element):
 		"""
 		Constructor
 		"""
-		super(Book, self).__init__(node_type="book")
+		super().__init__(node_type="book")
 
 
 class Collection(Element):
@@ -186,7 +186,7 @@ class Collection(Element):
 		"""
 		Constructor
 		"""
-		super(Collection, self).__init__(node_type="collection")
+		super().__init__(node_type="collection")
 
 
 class Library:
