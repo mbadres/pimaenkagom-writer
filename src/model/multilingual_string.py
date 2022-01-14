@@ -6,7 +6,7 @@ class String:
 	This class represents a multilingual string.
 	"""
 
-	def __init__(self, empty=False):
+	def __init__(self, empty: bool = False):
 		"""
 		Constructor
 		:param empty: A boolean, set true if you want to construct the empty string.
@@ -15,28 +15,28 @@ class String:
 		self.__status = "INCOMPLETE"
 		self.__strings = {}
 
-	def id(self):
+	def id(self) -> int:
 		"""
 		This method returns the id of the multilingual string.
 		:return: An integer
 		"""
 		return self.__id
 
-	def status(self):
+	def status(self) -> str:
 		"""
 		This method returns the status of the multilingual string.
 		:return: A string
 		"""
 		return self.__status
 
-	def strings(self):
+	def strings(self) -> dict:
 		"""
 		This method returns the all strings.
 		:return: A dictionary
 		"""
 		return self.__strings
 
-	def string(self, language):
+	def string(self, language: str) -> str:
 		"""
 		This method returns the string in the given language.
 		:param language: A string
@@ -44,7 +44,7 @@ class String:
 		"""
 		return self.__strings[language]
 
-	def dict(self):
+	def dict(self) -> dict:
 		"""
 		This method returns the json string representation.
 		:return: A dict
@@ -62,14 +62,14 @@ class String:
 		"""
 		return self.dict().__str__()
 
-	def set_status(self, status):
+	def set_status(self, status: str) -> None:
 		"""
 		This method sets the status of the multilingual string.
 		:param status: A string
 		"""
 		self.__status = status
 
-	def set_string(self, language, string):
+	def set_string(self, language: str, string: str) -> None:
 		"""
 		This method sets a string in a given language.
 		:param language: A string
