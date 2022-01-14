@@ -2,7 +2,7 @@ from PySide6.QtUiTools import QUiLoader
 from PySide6.QtWidgets import QApplication
 
 
-class UI(QApplication):
+class Application(QApplication):
 	"""
 	This class represents the hole ui.
 	"""
@@ -16,4 +16,4 @@ class UI(QApplication):
 		self.window = QUiLoader().load("resources/form.ui")
 		self.window.show()
 		self.window.pushButton.clicked.connect(lambda: print("Aye"))
-		self.exec()
+		self.window.pushButton_2.clicked.connect(lambda: print("Bye"))

@@ -1,5 +1,7 @@
+import sys
+
 from model.master import Master
-from ui.ui import UI
+from ui.application import Application
 
 if __name__ == '__main__':
 
@@ -7,4 +9,6 @@ if __name__ == '__main__':
 	maestro = Master()
 
 	# load the ui at last
-	UI()
+	app = Application()
+	code = app.exec()
+	sys.exit(code)
