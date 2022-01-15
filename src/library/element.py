@@ -11,81 +11,81 @@ class Element:
 		"""
 		Constructor
 		"""
-		self.__id = generate_id()
-		self.__title = String(empty=True)
-		self.__titled = True
-		self.__type = None
-		self.__node_type = node_type
-		self.__audible = True
-		self.__visible = True
-		self.__icon = ""
-		self.__version = 1
-		self.__children = [[]]
+		self.__id: int = generate_id()
+		self.__title: String = String(empty=True)
+		self.__titled: bool = True
+		self.__type: str = ""
+		self.__node_type: str = node_type
+		self.__audible: bool = True
+		self.__visible: bool = True
+		self.__icon: str = ""
+		self.__version: int = 1
+		self.__children: list[list[Element]] = [[]]
 
-	def id(self):
+	def id(self) -> int:
 		"""
 		This method returns the id of the element.
 		:return: An integer
 		"""
 		return self.__id
 
-	def title(self):
+	def title(self) -> String:
 		"""
 		This method returns the title.
 		:return: A multilingual string
 		"""
 		return self.__title
 
-	def titled(self):
+	def titled(self) -> bool:
 		"""
 		This method returns true if the element is titled.
 		:return: A boolean
 		"""
 		return self.__titled
 
-	def type(self):
+	def type(self) -> str:
 		"""
 		This method returns the element type.
 		:return: A string
 		"""
 		return self.__type
 
-	def node_type(self):
+	def node_type(self) -> str:
 		"""
 		This method returns the element node type.
 		:return: A string
 		"""
 		return self.__node_type
 
-	def audible(self):
+	def audible(self) -> bool:
 		"""
 		This method returns true if the element is set audible.
 		:return: A boolean
 		"""
 		return self.__audible
 
-	def visible(self):
+	def visible(self) -> bool:
 		"""
 		This method returns true if the element is set visible.
 		:return: A boolean
 		"""
 		return self.__visible
 
-	def icon(self):
+	def icon(self) -> str:
 		"""
 		This method returns the icon.
 		:return: A string
 		"""
 		return self.__icon
 
-	def version(self):
+	def version(self) -> int:
 		"""
 		This method returns the version.
 		:return: An integer
 		"""
 		return self.__version
 
-	def children(self):
+	def children(self) -> list[list]:
 		"""
 		This method returns the children.
 		:return: A list of lists
