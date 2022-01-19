@@ -3,7 +3,7 @@ from enum import Enum
 
 class Node(Enum):
 	"""
-	This class enumerates the type of library node.
+	This class enumerates the type of library nodes.
 	"""
 
 	# LIBRARY = 0
