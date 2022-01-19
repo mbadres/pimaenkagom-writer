@@ -11,4 +11,4 @@ class Section(Element):
 		"""
 		Constructor
 		"""
-		super().__init__(node_type=Node.Section)
+		super().__init__(node_type=Node.SECTION)

@@ -11,4 +11,4 @@ class Clause(Element):
 		"""
 		Constructor
 		"""
-		super().__init__(node_type=Node.Clause)
+		super().__init__(node_type=Node.CLAUSE)

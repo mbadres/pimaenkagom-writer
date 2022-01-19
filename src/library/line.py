@@ -11,4 +11,4 @@ class Line(Element):
 		"""
 		Constructor
 		"""
-		super().__init__(node_type=Node.Line)
+		super().__init__(node_type=Node.LINE)

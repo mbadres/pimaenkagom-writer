@@ -11,4 +11,4 @@ class Collection(Element):
 		"""
 		Constructor
 		"""
-		super().__init__(node_type=Node.Collection)
+		super().__init__(node_type=Node.COLLECTION)

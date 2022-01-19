@@ -11,4 +11,4 @@ class Book(Element):
 		"""
 		Constructor
 		"""
-		super().__init__(node_type=Node.Book)
+		super().__init__(node_type=Node.BOOK)

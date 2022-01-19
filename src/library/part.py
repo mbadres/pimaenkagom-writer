@@ -11,4 +11,4 @@ class Part(Element):
 		"""
 		Constructor
 		"""
-		super().__init__(node_type=Node.Part)
+		super().__init__(node_type=Node.PART)

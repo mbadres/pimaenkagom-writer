@@ -11,4 +11,4 @@ class Chapter(Element):
 		"""
 		Constructor
 		"""
-		super().__init__(node_type=Node.Chapter)
+		super().__init__(node_type=Node.CHAPTER)

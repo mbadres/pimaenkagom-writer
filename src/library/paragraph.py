@@ -11,4 +11,4 @@ class Paragraph(Element):
 		"""
 		Constructor
 		"""
-		super().__init__(node_type=Node.Paragraph)
+		super().__init__(node_type=Node.PARAGRAPH)

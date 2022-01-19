@@ -6,12 +6,12 @@ class Node(Enum):
 	This class enumerates the type of library node.
 	"""
 
-	# Library = 0
-	Collection = 1
-	Book = 2
-	Part = 3
-	Chapter = 4
-	Section = 5
-	Paragraph = 6
-	Line = 7
-	Clause = 8
+	# LIBRARY = 0
+	COLLECTION = 1
+	BOOK = 2
+	PART = 3
+	CHAPTER = 4
+	SECTION = 5
+	PARAGRAPH = 6
+	LINE = 7
+	CLAUSE = 8
