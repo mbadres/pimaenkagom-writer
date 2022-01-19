@@ -1,7 +1,7 @@
-import enum
+from enum import Enum
 
 
-class Node(enum.Enum):
+class Node(Enum):
 	"""
 	This class enumerates the type of library node.
 	"""
