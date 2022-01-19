@@ -1,4 +1,5 @@
 from library.element import Element
+from library.node import Node
 
 
 class Line(Element):
@@ -10,4 +11,4 @@ class Line(Element):
 		"""
 		Constructor
 		"""
-		super().__init__(node_type="line")
+		super().__init__(node_type=Node.Line)

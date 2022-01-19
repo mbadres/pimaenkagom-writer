@@ -1,3 +1,4 @@
+from library.node import Node
 from model.multilingual_string import String
 from util.generator import generate_id
 
@@ -7,7 +8,7 @@ class Element:
 	This class represents an element in the library.
 	"""
 
-	def __init__(self, node_type=None):
+	def __init__(self, node_type: Node = None):
 		"""
 		Constructor
 		"""
@@ -15,7 +16,7 @@ class Element:
 		self.__title: String = String(empty=True)
 		self.__titled: bool = True
 		self.__type: str = ""
-		self.__node_type: str = node_type
+		self.__node_type: Node = node_type
 		self.__audible: bool = True
 		self.__visible: bool = True
 		self.__icon: str = ""
@@ -50,7 +51,7 @@ class Element:
 		"""
 		return self.__type
 
-	def node_type(self) -> str:
+	def node_type(self) -> Node:
 		"""
 		This method returns the element node type.
 		:return: A string

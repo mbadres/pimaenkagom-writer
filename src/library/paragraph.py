@@ -1,4 +1,5 @@
 from library.element import Element
+from library.node import Node
 
 
 class Paragraph(Element):
@@ -10,4 +11,4 @@ class Paragraph(Element):
 		"""
 		Constructor
 		"""
-		super().__init__(node_type="paragraph")
+		super().__init__(node_type=Node.Paragraph)

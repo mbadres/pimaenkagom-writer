@@ -1,4 +1,5 @@
 from library.element import Element
+from library.node import Node
 
 
 class Collection(Element):
@@ -10,4 +11,4 @@ class Collection(Element):
 		"""
 		Constructor
 		"""
-		super().__init__(node_type="collection")
+		super().__init__(node_type=Node.Collection)

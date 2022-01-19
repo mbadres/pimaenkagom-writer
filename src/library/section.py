@@ -1,4 +1,5 @@
 from library.element import Element
+from library.node import Node
 
 
 class Section(Element):
@@ -10,4 +11,4 @@ class Section(Element):
 		"""
 		Constructor
 		"""
-		super().__init__(node_type="section")
+		super().__init__(node_type=Node.Section)

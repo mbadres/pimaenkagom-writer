@@ -1,4 +1,5 @@
 from library.element import Element
+from library.node import Node
 
 
 class Clause(Element):
@@ -10,4 +11,4 @@ class Clause(Element):
 		"""
 		Constructor
 		"""
-		super().__init__(node_type="clause")
+		super().__init__(node_type=Node.Clause)
