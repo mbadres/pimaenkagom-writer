@@ -3,7 +3,7 @@ import yaml
 from util.observation import Observable
 
 
-class Configuration(Observable):
+class Configurator(Observable):
 	"""
 	This class represents a configuration file
 	"""

@@ -1,4 +1,4 @@
-from model.configuration import Configuration
+from tools.configuration import Configurator
 
 
 class Master:
@@ -12,7 +12,7 @@ class Master:
 		"""
 
 		# load config
-		self.__config = Configuration("resources/config.yaml")
+		self.__config = Configurator("resources/config.yaml")
 
 	def configuration(self):
 		"""
