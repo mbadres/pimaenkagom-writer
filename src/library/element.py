@@ -1,6 +1,6 @@
 from library.node import Node
 from model.multilingual_string import String
-from util.generator import generate_id
+from tools.generation import Generator
 
 
 class Element:
@@ -12,7 +12,7 @@ class Element:
 		"""
 		Constructor
 		"""
-		self.__id: int = generate_id()
+		self.__id: int = Generator.generate_id()
 		self.__title: String = String(empty=True)
 		self.__titled: bool = True
 		self.__type: str = ""

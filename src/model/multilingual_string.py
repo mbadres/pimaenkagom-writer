@@ -1,4 +1,4 @@
-from util.generator import generate_id
+from tools.generation import Generator
 
 
 class String:
@@ -11,7 +11,7 @@ class String:
 		Constructor
 		:param empty: A boolean, set true if you want to construct the empty string.
 		"""
-		self.__id = 0 if empty else generate_id()
+		self.__id = 0 if empty else Generator.generate_id()
 		self.__status = "INCOMPLETE"
 		self.__strings = {}
 
