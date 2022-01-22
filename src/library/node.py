@@ -3,10 +3,10 @@ from enum import Enum
 
 class Node(Enum):
 	"""
-	This class enumerates the type of library nodes.
+	This class enumerates the types of a library node.
 	"""
 
-	# LIBRARY = 0
+	LIBRARY = 0
 	COLLECTION = 1
 	BOOK = 2
 	PART = 3
