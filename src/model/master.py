@@ -1,4 +1,7 @@
+import json
+
 from tools.configuration import Configurator
+from tools.generation import Generator
 
 
 class Master:
@@ -11,10 +14,29 @@ class Master:
 		Constructor
 		"""
 
+		# initialize data storage
+		self.multilingual_strings = {}
+
+		self.clauses = {}
+		self.lines = {}
+		self.paragraphs = {}
+		self.sections = {}
+		self.chapters = {}
+		self.parts = {}
+		self.books = {}
+		self.collections = {}
+
 		# load config
 		self.__config = Configurator("resources/config.yaml")
 
-	def configuration(self):
+		collections = Generator.generate_library()
+		library = []
+		for collection in collections:
+			library.append(collection.dict())
+		file = open("sample-lib.json", "w")
+		json.dump(library, file)
+
+	def configurator(self):
 		"""
 		This method returns the configuration of the Master.
 		:return: A configuration object
