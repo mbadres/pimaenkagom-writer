@@ -29,12 +29,12 @@ class Master:
 		# load config
 		self.__config = Configurator("resources/config.yaml")
 
-		collections = Generator.generate_library()
-		library = []
-		for collection in collections:
-			library.append(collection.dict())
-		file = open("sample-lib.json", "w")
-		json.dump(library, file)
+		# collections = Generator.generate_library()
+		# library = []
+		# for collection in collections:
+		# 	library.append(collection.dict())
+		# file = open("sample-lib.json", "w")
+		# json.dump(library, file)
 
 	def configurator(self):
 		"""
