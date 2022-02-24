@@ -1,2 +1,2 @@
-# pimaenkagom-writer
-A web application for the Pimaenkagom writer.
+# Pimaenkagom Writer
+A desktop application to create and edit Pimaenkagom library files.
